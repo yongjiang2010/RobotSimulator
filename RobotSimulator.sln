@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobotSimulator", "RobotSimulator\RobotSimulator.csproj", "{DF9C32F0-B015-4E5C-906E-351FB47E8E3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobotSimulator.Tests", "RobotSimulator.Tests\RobotSimulator.Tests.csproj", "{89500809-6DDA-4F46-9FD8-A3F30A782D40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobotContracts", "RobotContracts\RobotContracts.csproj", "{33A76A02-B09F-4FAB-B21E-23785DB7377A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobotImplementation", "RobotImplementation\RobotImplementation.csproj", "{754ECD39-8EEB-4039-B785-F60806FE740E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{29EEC731-0403-4A16-8029-5A8DAACC9AFA}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF9C32F0-B015-4E5C-906E-351FB47E8E3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF9C32F0-B015-4E5C-906E-351FB47E8E3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF9C32F0-B015-4E5C-906E-351FB47E8E3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF9C32F0-B015-4E5C-906E-351FB47E8E3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89500809-6DDA-4F46-9FD8-A3F30A782D40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89500809-6DDA-4F46-9FD8-A3F30A782D40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89500809-6DDA-4F46-9FD8-A3F30A782D40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89500809-6DDA-4F46-9FD8-A3F30A782D40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33A76A02-B09F-4FAB-B21E-23785DB7377A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33A76A02-B09F-4FAB-B21E-23785DB7377A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33A76A02-B09F-4FAB-B21E-23785DB7377A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33A76A02-B09F-4FAB-B21E-23785DB7377A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{754ECD39-8EEB-4039-B785-F60806FE740E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{754ECD39-8EEB-4039-B785-F60806FE740E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{754ECD39-8EEB-4039-B785-F60806FE740E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{754ECD39-8EEB-4039-B785-F60806FE740E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
