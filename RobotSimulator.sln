@@ -18,6 +18,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{29EEC7
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Robot.Bootstrap", "Robot.Bootstrap\Robot.Bootstrap.csproj", "{8FE56BC6-A932-4964-BD67-5941429DA079}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -40,6 +42,10 @@ Global
 		{754ECD39-8EEB-4039-B785-F60806FE740E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{754ECD39-8EEB-4039-B785-F60806FE740E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{754ECD39-8EEB-4039-B785-F60806FE740E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FE56BC6-A932-4964-BD67-5941429DA079}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FE56BC6-A932-4964-BD67-5941429DA079}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FE56BC6-A932-4964-BD67-5941429DA079}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FE56BC6-A932-4964-BD67-5941429DA079}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
