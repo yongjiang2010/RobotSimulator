@@ -1,11 +1,7 @@
-﻿using RobotContracts;
+﻿using Robot.Contracts;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace RobotImplementation
+namespace Robot.Implementation
 {
     public class TableRobot : IActionable
     {
@@ -29,7 +25,7 @@ namespace RobotImplementation
             return string.Format("X: {0},  Y: {1},  Facing: {2}", _x, _y, _facing);
         }
 
-        void RobotContracts.IActionable.Place(int x, int y, RobotContracts.Facing facing)
+        void IActionable.Place(int x, int y, Facing facing)
         {
             if (_actionValidator.IsValidate(x, y))
             {
@@ -39,7 +35,7 @@ namespace RobotImplementation
             }
         }
 
-        void RobotContracts.IActionable.Move()
+        void IActionable.Move()
         {
             switch (this._facing)
             {
@@ -59,7 +55,7 @@ namespace RobotImplementation
             }
         }
 
-        void RobotContracts.IActionable.Left()
+        void IActionable.Left()
         {
             if (_actionValidator.IsValidate(this._x, this._y))
             {
@@ -83,7 +79,7 @@ namespace RobotImplementation
             
         }
 
-        void RobotContracts.IActionable.Right()
+        void IActionable.Right()
         {
             if (_actionValidator.IsValidate(this._x, this._y))
             {
@@ -107,7 +103,7 @@ namespace RobotImplementation
            
         }
 
-        string RobotContracts.IActionable.Report()
+        string IActionable.Report()
         {
             if (_actionValidator.IsValidate(this._x, this._y))
             {

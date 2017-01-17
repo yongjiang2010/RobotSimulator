@@ -61,13 +61,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\RobotContracts\RobotContracts.csproj">
+    <ProjectReference Include="..\Robot.Contracts\Robot.Contracts.csproj">
       <Project>{33a76a02-b09f-4fab-b21e-23785db7377a}</Project>
-      <Name>RobotContracts</Name>
+      <Name>Robot.Contracts</Name>
     </ProjectReference>
-    <ProjectReference Include="..\RobotImplementation\RobotImplementation.csproj">
+    <ProjectReference Include="..\Robot.Implementation\Robot.Implementation.csproj">
       <Project>{754ecd39-8eeb-4039-b785-f60806fe740e}</Project>
-      <Name>RobotImplementation</Name>
+      <Name>Robot.Implementation</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

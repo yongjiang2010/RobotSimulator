@@ -6,8 +6,8 @@
     <ProjectGuid>{89500809-6DDA-4F46-9FD8-A3F30A782D40}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>RobotSimulator.Tests</RootNamespace>
-    <AssemblyName>RobotSimulator.Tests</AssemblyName>
+    <RootNamespace>Robot.Tests</RootNamespace>
+    <AssemblyName>Robot.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -55,13 +55,13 @@
     <Compile Include="FiveByFiveTableActionValidatorUnitTest.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\RobotContracts\RobotContracts.csproj">
+    <ProjectReference Include="..\Robot.Contracts\Robot.Contracts.csproj">
       <Project>{33a76a02-b09f-4fab-b21e-23785db7377a}</Project>
-      <Name>RobotContracts</Name>
+      <Name>Robot.Contracts</Name>
     </ProjectReference>
-    <ProjectReference Include="..\RobotImplementation\RobotImplementation.csproj">
+    <ProjectReference Include="..\Robot.Implementation\Robot.Implementation.csproj">
       <Project>{754ecd39-8eeb-4039-b785-f60806fe740e}</Project>
-      <Name>RobotImplementation</Name>
+      <Name>Robot.Implementation</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

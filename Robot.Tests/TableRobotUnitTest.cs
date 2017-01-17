@@ -1,9 +1,9 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using RobotContracts;
-using RobotImplementation;
+using Robot.Contracts;
+using Robot.Implementation;
 
-namespace RobotSimulator.Tests
+namespace Robot.Tests
 {
     [TestClass] 
     public class TableRobotUnitTest 

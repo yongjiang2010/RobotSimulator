@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6160C6CD-EDCA-480F-8746-91A1E1E5F2F6}</ProjectGuid>
+    <ProjectGuid>{754ECD39-8EEB-4039-B785-F60806FE740E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>RobotLib</RootNamespace>
-    <AssemblyName>RobotLib</AssemblyName>
+    <RootNamespace>Robot.Implementation</RootNamespace>
+    <AssemblyName>Robot.Implementation</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -39,8 +39,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IAction.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FiveByFiveTableActionValidator.cs" />
+    <Compile Include="TableRobot.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Robot.Contracts\Robot.Contracts.csproj">
+      <Project>{33a76a02-b09f-4fab-b21e-23785db7377a}</Project>
+      <Name>Robot.Contracts</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

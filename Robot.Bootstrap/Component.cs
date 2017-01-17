@@ -1,4 +1,6 @@
 ﻿using Microsoft.Practices.Unity;
+using Robot.Contracts;
+using Robot.Implementation;
 namespace Robot.Bootstrap
 {
     public class Component
@@ -13,8 +15,8 @@ namespace Robot.Bootstrap
 
         private void Register()
         {
-            _container.RegisterType<RobotContracts.IActionValidator, RobotImplementation.FiveByFiveTableActionValidator>();
-            _container.RegisterType<RobotContracts.IActionable, RobotImplementation.TableRobot>();
+            _container.RegisterType<IActionValidator, FiveByFiveTableActionValidator>();
+            _container.RegisterType<IActionable, TableRobot>();
 
         }
 

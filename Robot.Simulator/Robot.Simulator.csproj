@@ -7,8 +7,8 @@
     <ProjectGuid>{DF9C32F0-B015-4E5C-906E-351FB47E8E3B}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>RobotSimulator</RootNamespace>
-    <AssemblyName>RobotSimulator</AssemblyName>
+    <RootNamespace>Robot.Simulator</RootNamespace>
+    <AssemblyName>Robot.Simulator</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -61,6 +61,7 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Worker.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -88,9 +89,9 @@
       <Project>{8fe56bc6-a932-4964-bd67-5941429da079}</Project>
       <Name>Robot.Bootstrap</Name>
     </ProjectReference>
-    <ProjectReference Include="..\RobotContracts\RobotContracts.csproj">
+    <ProjectReference Include="..\Robot.Contracts\Robot.Contracts.csproj">
       <Project>{33a76a02-b09f-4fab-b21e-23785db7377a}</Project>
-      <Name>RobotContracts</Name>
+      <Name>Robot.Contracts</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

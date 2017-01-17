@@ -7,8 +7,8 @@
     <ProjectGuid>{33A76A02-B09F-4FAB-B21E-23785DB7377A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>RobotContracts</RootNamespace>
-    <AssemblyName>RobotContracts</AssemblyName>
+    <RootNamespace>Robot.Contracts</RootNamespace>
+    <AssemblyName>Robot.Contracts</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

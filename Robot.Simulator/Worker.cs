@@ -1,24 +1,8 @@
-﻿using RobotContracts;
+﻿using Robot.Contracts;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace RobotSimulator
+namespace Robot.Simulator
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-
-            Worker worker = new Robot.Bootstrap.Component().Resolve<Worker>();
-
-            worker.Run();
-           
-        }
-    }
-
     public class Worker
     {
         IActionable _robot;
