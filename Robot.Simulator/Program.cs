@@ -9,7 +9,7 @@ namespace Robot.Simulator
 
             Worker worker = new Robot.Bootstrap.Component().Resolve<Worker>();
 
-            worker.Run();  
+            worker.Run(); 
            
         }
     }
