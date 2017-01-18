@@ -1,9 +1,10 @@
 ﻿using Microsoft.Practices.Unity;
 using Robot.Contracts;
 using Robot.Implementation;
+using System;
 namespace Robot.Bootstrap
 {
-    public class Component
+    public class Component : IDisposable
     {
         IUnityContainer _container;
 
@@ -23,6 +24,11 @@ namespace Robot.Bootstrap
         public T Resolve<T>()
         {
            return  _container.Resolve<T>();
+        }
+
+        public void Dispose()
+        {
+            _container.Dispose();
         }
     }
 }

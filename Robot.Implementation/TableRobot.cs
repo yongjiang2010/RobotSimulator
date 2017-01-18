@@ -25,7 +25,7 @@ namespace Robot.Implementation
             return string.Format("X: {0},  Y: {1},  Facing: {2}", _x, _y, _facing);
         }
 
-        void IActionable.Place(int x, int y, Facing facing)
+        public void Place(int x, int y, Facing facing)
         {
             if (_actionValidator.IsValidate(x, y))
             {
@@ -35,7 +35,7 @@ namespace Robot.Implementation
             }
         }
 
-        void IActionable.Move()
+        public void Move()
         {
             switch (this._facing)
             {
@@ -55,7 +55,7 @@ namespace Robot.Implementation
             }
         }
 
-        void IActionable.Left()
+        public void Left()
         {
             if (_actionValidator.IsValidate(this._x, this._y))
             {
@@ -79,7 +79,7 @@ namespace Robot.Implementation
             
         }
 
-        void IActionable.Right()
+        public void Right()
         {
             if (_actionValidator.IsValidate(this._x, this._y))
             {
@@ -103,7 +103,7 @@ namespace Robot.Implementation
            
         }
 
-        string IActionable.Report()
+        public string Report()
         {
             if (_actionValidator.IsValidate(this._x, this._y))
             {
@@ -116,7 +116,7 @@ namespace Robot.Implementation
             
         }
 
-        bool IActionable.CanAction(ActionType actionType)
+        public bool CanAction(ActionType actionType)
         {
 
             switch (actionType)
