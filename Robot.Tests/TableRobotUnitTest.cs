@@ -356,5 +356,114 @@ namespace Robot.Tests
             Assert.AreEqual("X: 0,  Y: 0,  Facing: NORTH", report, "Report action successful");
 
         }
+
+        [TestMethod]
+
+        public void TestCanAction_1()
+        {
+
+            IActionable robot = new TableRobot(new FiveByFiveTableActionValidator());
+
+            Assert.AreEqual(true, robot.CanAction(ActionType.PLACE), "Place action can always be taken.");
+
+        }
+
+
+
+        [TestMethod]
+
+        public void TestCanAction_2()
+        {
+
+            IActionable robot = new TableRobot(new FiveByFiveTableActionValidator());
+
+            Assert.AreEqual(false, robot.CanAction(ActionType.LEFT), "Left action cannot be taken before the robot gets placed onto the table.");
+
+        }
+
+        [TestMethod]
+
+        public void TestCanAction_3()
+        {
+
+            IActionable robot = new TableRobot(new FiveByFiveTableActionValidator());
+
+            Assert.AreEqual(false, robot.CanAction(ActionType.MOVE), "Move action cannot be taken before the robot gets placed onto the table.");
+
+        }
+
+        [TestMethod]
+
+        public void TestCanAction_4()
+        {
+
+            IActionable robot = new TableRobot(new FiveByFiveTableActionValidator());
+
+            Assert.AreEqual(false, robot.CanAction(ActionType.RIGHT), "Right action cannot be taken before the robot gets placed onto the table.");
+
+        }
+
+        [TestMethod]
+
+        public void TestCanAction_5()
+        {
+
+            IActionable robot = new TableRobot(new FiveByFiveTableActionValidator());
+
+            Assert.AreEqual(false, robot.CanAction(ActionType.REPORT), "Report action cannot be taken before the robot gets placed onto the table.");
+
+        }
+
+        [TestMethod]
+
+        public void TestCanAction_6()
+        {
+
+            IActionable robot = new TableRobot(new FiveByFiveTableActionValidator());
+
+            robot.Place(0, 0, Facing.NORTH);
+
+            Assert.AreEqual(true, robot.CanAction(ActionType.LEFT), "Left action can be taken after the robot gets placed onto the table.");
+
+        }
+
+        [TestMethod]
+
+        public void TestCanAction_7()
+        {
+
+            IActionable robot = new TableRobot(new FiveByFiveTableActionValidator());
+
+            robot.Place(0, 0, Facing.NORTH);
+
+            Assert.AreEqual(true, robot.CanAction(ActionType.MOVE), "Move action can be taken after the robot gets placed onto the table.");
+
+        }
+
+        [TestMethod]
+
+        public void TestCanAction_8()
+        {
+
+            IActionable robot = new TableRobot(new FiveByFiveTableActionValidator());
+
+            robot.Place(0, 0, Facing.NORTH);
+
+            Assert.AreEqual(true, robot.CanAction(ActionType.RIGHT), "Right action can be taken after the robot gets placed onto the table.");
+
+        }
+
+        [TestMethod]
+
+        public void TestCanAction_9()
+        {
+
+            IActionable robot = new TableRobot(new FiveByFiveTableActionValidator());
+
+            robot.Place(0, 0, Facing.NORTH);
+
+            Assert.AreEqual(true, robot.CanAction(ActionType.REPORT), "Report action can be taken after the robot gets placed onto the table.");
+
+        }
     }
 }

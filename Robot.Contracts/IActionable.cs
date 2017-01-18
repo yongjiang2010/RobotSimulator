@@ -11,5 +11,7 @@
         void Right();
 
         string Report();
+
+        bool CanAction(ActionType actionType);
     }
 }

@@ -8,5 +8,14 @@
         SOUTH,
         WEST
     }
+
+    public enum ActionType
+    {
+        PLACE,
+        MOVE,
+        LEFT,
+        RIGHT,
+        REPORT
+    }
     
 }

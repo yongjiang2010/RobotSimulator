@@ -115,5 +115,23 @@ namespace Robot.Implementation
             }
             
         }
+
+        bool IActionable.CanAction(ActionType actionType)
+        {
+
+            switch (actionType)
+            {
+
+                case ActionType.PLACE:
+
+                    return true;
+
+                default:
+
+                    return (this._x > -1 && this._y > -1);
+
+            }
+
+        }
     }
 }
