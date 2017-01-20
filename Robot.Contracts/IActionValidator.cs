@@ -2,6 +2,6 @@
 {
     public interface IActionValidator
     {
-        bool IsValidate(int x, int y);
+        bool Validate(int x, int y);
     }
 }

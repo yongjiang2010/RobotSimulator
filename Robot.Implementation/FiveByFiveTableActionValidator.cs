@@ -12,7 +12,7 @@ namespace Robot.Implementation
         const int MAX_Y = 4;
 
 
-        public bool IsValidate(int x, int y)
+        public bool Validate(int x, int y)
         {
             return x >= MIN_X && x <= MAX_X && y >= MIN_Y && y <= MAX_Y;
         }

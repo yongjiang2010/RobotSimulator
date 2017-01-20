@@ -27,7 +27,7 @@ namespace Robot.Implementation
 
         public void Place(int x, int y, Facing facing)
         {
-            if (_actionValidator.IsValidate(x, y))
+            if (_actionValidator.Validate(x, y))
             {
                 this._x = x;
                 this._y = y;
@@ -40,16 +40,16 @@ namespace Robot.Implementation
             switch (this._facing)
             {
                 case Facing.EAST:
-                    if (_actionValidator.IsValidate(this._x + 1, this._y)) this._x++;
+                    if (_actionValidator.Validate(this._x + 1, this._y)) this._x++;
                     break;
                 case Facing.NORTH:
-                    if (_actionValidator.IsValidate(this._x, this._y + 1)) this._y++;
+                    if (_actionValidator.Validate(this._x, this._y + 1)) this._y++;
                     break;
                 case Facing.SOUTH:
-                    if (_actionValidator.IsValidate(this._x, this._y - 1)) this._y--;
+                    if (_actionValidator.Validate(this._x, this._y - 1)) this._y--;
                     break;
                 case Facing.WEST:
-                    if (_actionValidator.IsValidate(this._x - 1, this._y)) this._x--;
+                    if (_actionValidator.Validate(this._x - 1, this._y)) this._x--;
                     break;
                 default: break;
             }
@@ -57,7 +57,7 @@ namespace Robot.Implementation
 
         public void Left()
         {
-            if (_actionValidator.IsValidate(this._x, this._y))
+            if (_actionValidator.Validate(this._x, this._y))
             {
                 switch (this._facing)
                 {
@@ -81,7 +81,7 @@ namespace Robot.Implementation
 
         public void Right()
         {
-            if (_actionValidator.IsValidate(this._x, this._y))
+            if (_actionValidator.Validate(this._x, this._y))
             {
                 switch (this._facing)
                 {
@@ -105,7 +105,7 @@ namespace Robot.Implementation
 
         public string Report()
         {
-            if (_actionValidator.IsValidate(this._x, this._y))
+            if (_actionValidator.Validate(this._x, this._y))
             {
                 return ToString();
             }
